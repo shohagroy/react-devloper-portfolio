@@ -13,7 +13,8 @@ import tailwind from '../../assets/tailwind.png'
 
 const Skills = () => {
     return (
-        <div className='bg-[#0a192f] text-gray-300'>
+        <div className='bg-[#0a192f] text-gray-300 h-screen'>
+            <div>
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <p className='text-4xl font-bold inline border-b-4 border-lime-400'>Experience</p>
                 <p className='py-4'>// These are the technologies I've worked with</p>
@@ -70,6 +71,9 @@ const Skills = () => {
                     <p className='my-4'>aws</p>
                 </div>
             </div>
+
+            </div>
+            
         </div>
     );
 };
