@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className="bg-[#0a192f] text-white fixed w-full ">
       <nav className="flex justify-between h-20 items-center px-10 m-auto">
-        <img src={logo} alt="Logo-HTML" className="z-10 w-28" />
+        <img src={logo} alt="Logo-HTML" className="z-[20] w-28" />
 
         <span onClick={()=> setToggle(!toggle)} className="md:hidden block cursor-pointer z-10">
         {
@@ -36,20 +36,20 @@ const Header = () => {
         </svg>
         }
       </span>
-      <ul className={`${toggle ? 'top-20' : 'top-[-800px]'} z-1 duration-500 bg-[#0a192f] md:flex absolute md:static left-0 text-center top-20 w-full md:w-auto`}>
-          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered] py-10 m-5 md:m-0 cursor-pointer">
+      <ul className={`${toggle ? 'top-20' : 'top-[-800px]'} z-[10] duration-500 bg-[#0a192f] md:flex absolute md:static left-0 text-center top-20 w-full md:w-auto ${toggle ? 'h-screen' : 'h-auto'}`}>
+          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered] sm:py-5 m-5 md:m-0 cursor-pointer">
             <Link to='main' smooth={true} duration={500} >Home</Link>
           </li>
-          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered] py-10 m-5 md:m-0 cursor-pointer">
+          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered]sm:py-5 m-5 md:m-0 cursor-pointer">
           <Link to='about' smooth={true} duration={500} >About</Link>
           </li>
-          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered] py-10 m-5 md:m-0 cursor-pointer">
+          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered]sm:py-5 m-5 md:m-0 cursor-pointer">
           <Link to='skills' smooth={true} duration={500} >Skills</Link>
           </li>
-          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered] py-10 m-5 md:m-0 cursor-pointer">
+          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered] sm:py-5 m-5 md:m-0 cursor-pointer">
           <Link to='work' smooth={true} duration={500} >Work</Link>
           </li>
-          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered] py-10 m-5 md:m-0 cursor-pointer">
+          <li className="md:py-2 md:px-5 md:text-sm text-2xl hover:text-[orangered]sm:py-5 m-5 md:m-0 cursor-pointer">
           <Link to='contact' smooth={true} duration={500} >Contact</Link>
           </li>
         </ul>
