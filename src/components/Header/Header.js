@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-
 import { Link } from "react-scroll";
 
 const Header = () => {
@@ -8,7 +7,7 @@ const Header = () => {
 
   return (
     <div className="bg-[#0a192f] text-white fixed w-full ">
-      <nav className="flex justify-between h-20 z-50 items-center px-10 m-auto">
+      <nav className="flex justify-between h-20 z-50 items-center px-4 md:px-10 m-auto">
         {/* <img src={logo} alt="Logo-HTML" className="z-[20] w-28" /> */}
         <div>
           <Link to="main" smooth={true} duration={500}>

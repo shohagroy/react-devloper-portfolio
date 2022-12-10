@@ -1,10 +1,18 @@
 import React from "react";
+import {
+  hideDialog,
+  hideMessenger,
+  MessengerChat,
+  setMessengerBottomSpacing,
+  showDialog,
+  showMessenger,
+} from "react-messenger-chat-plugin";
 
 const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
+      className="w-full h-full bg-[#0a192f] pt-20 flex justify-center flex-col items-center p-4"
     >
       <form
         method="POST"
@@ -15,9 +23,44 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-[orangered] text-gray-300">
             Contact
           </p>
-          <p className="text-gray-300 py-4">
-            // Submit the form below or shoot me an email -
-            pkshohag240@gmail.com
+
+          <div className="py-6 text-xl md:text-2xl font-semibold text-white">
+            <div className="flex items-center p-2">
+              <span className=" w-[40px] h-[40px] text-center p-1 bg-[orangered] rounded-full border border-white">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <p className="ml-4">shohagroy27@gmail.com</p>
+            </div>
+
+            <div className="flex items-center p-2">
+              <span className=" w-[40px] h-[40px] text-center p-1 bg-[orangered] rounded-full border border-white">
+                <i class="fa-brands fa-whatsapp"></i>
+              </span>
+              <p className="ml-4">+880 1760 567555</p>
+            </div>
+
+            <div className="flex items-center p-2">
+              <span className=" w-[40px] h-[40px] text-center p-1 bg-[orangered] rounded-full border border-white">
+                <i class="fa-brands fa-skype"></i>
+              </span>
+              <p className="ml-4">shohagroy@yahoo.com</p>
+            </div>
+
+            <div className="flex items-center p-2">
+              <span className=" w-[40px] h-[40px] text-center p-1 bg-[orangered] rounded-full border border-white">
+                <i class="fa-solid fa-house-chimney"></i>
+              </span>
+              <p className="ml-4">Rangpur, Bangladesh</p>
+            </div>
+          </div>
+
+          <div className="flex items-center w-full my-4">
+            <hr className="w-full dark:text-gray-400" />
+            <p className="px-3 text-white text-2xl font-bold">OR</p>
+            <hr className="w-full dark:text-gray-400" />
+          </div>
+          <p className="text-gray-300">
+            // Submit the form below to send me a short message
           </p>
         </div>
         <input
