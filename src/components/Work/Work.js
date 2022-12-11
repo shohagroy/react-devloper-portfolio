@@ -6,6 +6,7 @@ import realEstate from "../../assets/realestate.jpg";
 import mobileMart from "../../assets/mobile-mart.PNG";
 import travelPoient from "../../assets/travel-point.PNG";
 import ghooriLearning from "../../assets/ghoori-learning.PNG";
+import { Link } from "react-router-dom";
 
 const Work = () => {
   const projects = [
@@ -67,12 +68,12 @@ const Work = () => {
                     }}
                   />{" "}
                 </div>
-                <button
-                  type="button"
+                <Link
+                  to="/project"
                   className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-[orangered] text-white"
                 >
                   Read more
-                </button>
+                </Link>
               </div>
             </div>
           ))}
